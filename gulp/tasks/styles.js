@@ -9,7 +9,8 @@ var gulp       = require('gulp')
 ,autoprefixer  = require('gulp-autoprefixer')
 ,connect       = require('gulp-connect')
 ,argv          = require('yargs').argv
-,sourcemaps    = require('gulp-sourcemaps');
+,sourcemaps    = require('gulp-sourcemaps')
+,sassGlob      = require('gulp-sass-glob');
 
 
 
@@ -18,6 +19,7 @@ module.exports = gulp.task('styles', function() {
 
    return gulp.src('source/sass/*.scss')
    .pipe(gulpif(!argv.production, sourcemaps.init()))
+   .pipe(sassGlob())
    .pipe(sass({
       outputStyle: format
    }).on('error', sass.logError))

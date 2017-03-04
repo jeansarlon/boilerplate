@@ -9,10 +9,7 @@
 @import 'helpers/reset';
 @import 'helpers/mixins';
 @import 'helpers/media-query-output';
-/* Foundation
- * -------------------- */
-@import 'foundation/print';
-@import 'foundation/typography';
+
 /* Components
  * -------------------- */
 @import "components/grid";
@@ -20,10 +17,9 @@
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/cards';
+@import 'components/typography';
+@import 'components/print';
+
 /* Global
  * -------------------- */
 @import 'helpers/global';
-/* Layout
- * -------------------- */
-@import 'layout/header';
-@import 'layout/footer';
