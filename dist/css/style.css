@@ -3360,16 +3360,6 @@ th {
   }
 }
 
-/** Name:            Flex
- * Description:     Defines styles to create layouts with flexbox
- *
- * Component:       `flex-*`
- *
- * Used by:         Caption
- *
-========================================================================
-   Component: Flex
-======================================================================== */
 .flex {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -3726,13 +3716,13 @@ th {
 
 .btn:focus, .btn-large:focus,
 .btn-floating:focus {
-  background-color: #1d7d74;
+  background-color: #ab154c;
 }
 
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #d81b60;
   text-align: center;
   letter-spacing: 0.5px;
   -webkit-transition: 0.2s ease-out;
@@ -3741,7 +3731,7 @@ th {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #e4286d;
 }
 
 .btn-floating {
@@ -3754,7 +3744,7 @@ th {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #d81b60;
   border-radius: 50%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -3763,7 +3753,7 @@ th {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #d81b60;
 }
 
 .btn-floating:before {
@@ -3913,7 +3903,7 @@ button.btn-floating {
   z-index: -1;
   width: 40px;
   height: 40px;
-  background-color: #26a69a;
+  background-color: #d81b60;
   border-radius: 50%;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -4451,6 +4441,229 @@ small {
   font-weight: 700;
 }
 
+nav {
+  color: #fff;
+  background-color: #1976D2;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+
+nav.nav-extended {
+  height: auto;
+}
+
+nav.nav-extended .nav-wrapper {
+  min-height: 56px;
+  height: auto;
+}
+
+nav.nav-extended .nav-content {
+  position: relative;
+  line-height: normal;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav [class*="mdi-"],
+nav [class^="mdi-"],
+nav i,
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 56px;
+  line-height: 56px;
+}
+
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+@media only screen and (min-width: 993px) {
+  nav a.button-collapse {
+    display: none;
+  }
+}
+
+nav .button-collapse {
+  float: left;
+  position: relative;
+  z-index: 1;
+  height: 56px;
+  margin: 0 18px;
+}
+
+nav .button-collapse i {
+  height: 56px;
+  line-height: 56px;
+}
+
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
+  white-space: nowrap;
+}
+
+nav .brand-logo.center {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  nav .brand-logo.left, nav .brand-logo.right {
+    padding: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  nav .brand-logo.left {
+    left: 0.5rem;
+  }
+  nav .brand-logo.right {
+    right: 0.5rem;
+    left: auto;
+  }
+}
+
+nav .brand-logo.right {
+  right: 0.5rem;
+  padding: 0;
+}
+
+nav .brand-logo [class*="mdi-"],
+nav .brand-logo [class^="mdi-"],
+nav .brand-logo i,
+nav .brand-logo i.material-icons {
+  float: left;
+  margin-right: 15px;
+}
+
+nav .nav-title {
+  display: inline-block;
+  font-size: 32px;
+  padding: 28px 0;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  float: left;
+  padding: 0;
+}
+
+nav ul li.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul a {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+nav ul a.btn, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating, nav ul a.btn-large {
+  margin-top: -2px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons, nav ul a.btn-large > .material-icons {
+  height: inherit;
+  line-height: inherit;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul.left {
+  float: left;
+}
+
+nav form {
+  height: 100%;
+}
+
+nav .input-field {
+  margin: 0;
+  height: 100%;
+}
+
+nav .input-field input {
+  height: 100%;
+  font-size: 1.2rem;
+  border: none;
+  padding-left: 2rem;
+}
+
+nav .input-field input:focus, nav .input-field input[type=date]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=text]:valid, nav .input-field input[type=url]:valid {
+  border: none;
+  box-shadow: none;
+}
+
+nav .input-field label {
+  top: 0;
+  left: 0;
+}
+
+nav .input-field label i {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+nav .input-field label.active i {
+  color: #fff;
+}
+
+.navbar-fixed {
+  position: relative;
+  height: 56px;
+  z-index: 997;
+}
+
+.navbar-fixed nav {
+  position: fixed;
+}
+
+@media only screen and (min-width: 601px) {
+  nav.nav-extended .nav-wrapper {
+    min-height: 64px;
+  }
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    height: 64px;
+    line-height: 64px;
+  }
+  .navbar-fixed {
+    height: 64px;
+  }
+}
+
 /**
  * Base print styling
  * -----------------------------------------------------------------------------
@@ -4557,7 +4770,7 @@ a {
   box-shadow: none !important;
 }
 
-.z-depth-1, .btn, .btn-large, .btn-floating, .card-panel, .card {
+.z-depth-1, .btn, .btn-large, .btn-floating, .card-panel, .card, nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -4602,7 +4815,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ee6e73;
+  border-left: 5px solid #1976D2;
 }
 
 i {
@@ -4662,7 +4875,7 @@ video.responsive-video {
 }
 
 .pagination li.active {
-  background-color: #ee6e73;
+  background-color: #1976D2;
 }
 
 .pagination li.disabled a {
@@ -4854,7 +5067,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #1976D2;
 }
 
 footer.page-footer .footer-copyright {
@@ -5050,8 +5263,8 @@ th {
 }
 
 .collection .collection-item.active {
-  background-color: #26a69a;
-  color: #eafaf9;
+  background-color: #d81b60;
+  color: white;
 }
 
 .collection .collection-item.active .secondary-content {
@@ -5062,7 +5275,7 @@ th {
   display: block;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  color: #26a69a;
+  color: #d81b60;
 }
 
 .collection a.collection-item:not(.active):hover {
@@ -5085,7 +5298,7 @@ th {
 
 .secondary-content {
   float: right;
-  color: #26a69a;
+  color: #d81b60;
 }
 
 .collapsible .collection {
@@ -5109,7 +5322,7 @@ span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #d81b60;
   border-radius: 2px;
 }
 
@@ -5143,7 +5356,7 @@ nav ul a span.badge {
   right: 0;
   bottom: 10px;
   left: 0;
-  background-color: #26a69a;
+  background-color: #d81b60;
   border-radius: 2px;
   z-index: -1;
 }
@@ -5174,7 +5387,7 @@ nav ul a span.badge {
   height: 4px;
   display: block;
   width: 100%;
-  background-color: #acece6;
+  background-color: #f8c7d9;
   border-radius: 2px;
   margin: 0.5rem 0 1rem;
   overflow: hidden;
@@ -5185,13 +5398,13 @@ nav ul a span.badge {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #26a69a;
+  background-color: #d81b60;
   -webkit-transition: width 0.3s linear;
   transition: width 0.3s linear;
 }
 
 .progress .indeterminate {
-  background-color: #26a69a;
+  background-color: #d81b60;
 }
 
 .progress .indeterminate:before {
