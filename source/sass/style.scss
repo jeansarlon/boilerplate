@@ -3,7 +3,13 @@
  * -----------------------------------------------------------------------------
  */
 
+ /** Import of simpleskeletoncss
+  * ---------------------------
+  */
 
-// /* Components
-//  * -------------------- */
+  @import "../../node_modules/simpleskeletoncss/source/sass/style.scss";
+
+/** Import of components
+ * ---------------------------
+ */
 @import "components/teste";

@@ -2,10 +2,9 @@
  * Import of Sass files
  * -----------------------------------------------------------------------------
  */
-.teste {
-  background-color: "#fff";
-}
-
+/** Import of simpleskeletoncss
+  * ---------------------------
+  */
 /**
  * Import of Sass files
  * -----------------------------------------------------------------------------
@@ -5404,4 +5403,11 @@ th {
 
 *[class*="darken-"] {
   color: #fff !important;
+}
+
+/** Import of components
+ * ---------------------------
+ */
+.teste {
+  background-color: #E53935;
 }
