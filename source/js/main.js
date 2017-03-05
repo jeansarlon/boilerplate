@@ -1,17 +1,26 @@
+/*
+* Default Requires
+* =================================
+*/
 'use strict';
 window.jQuery = window.$ = require('jQuery');
+require('../../node_modules/simpleskeletoncss/dist/js/simpleskeleton.min.js')
+
+/*
+* You Requires
+* =================================
+*/
+
 import Example from './components/example'
 require('./vendor/velocity.min.js')
-require('./components/cards')
-require('./components/base')
 
+/*
+* You Code here
+* =================================
+*/
 
+let elem = "jnjhn"
 
-$(document).ready(function() {
-   let example
+let example = new Example({element: elem});
 
-   $('body').each(function(i, elem) {
-      example = new Example({element: elem});
-   });
-   example.foo()
-});
+example.foo()

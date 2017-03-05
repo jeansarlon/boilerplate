@@ -2,25 +2,8 @@
  * Import of Sass files
  * -----------------------------------------------------------------------------
  */
-/* Helpers
- * -------------------- */
-@import "helpers/color";
-@import "helpers/variables";
-@import 'helpers/reset';
-@import 'helpers/mixins';
-@import 'helpers/media-query-output';
 
-/* Components
- * -------------------- */
-@import "components/grid";
-@import "components/flex";
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/cards';
-@import 'components/typography';
-@import 'components/navbar';
-@import 'components/print';
 
-/* Global
- * -------------------- */
-@import 'helpers/global';
+// /* Components
+//  * -------------------- */
+@import "components/teste";

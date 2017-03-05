@@ -2,6 +2,14 @@
  * Import of Sass files
  * -----------------------------------------------------------------------------
  */
+.teste {
+  background-color: "#fff";
+}
+
+/**
+ * Import of Sass files
+ * -----------------------------------------------------------------------------
+ */
 /* Helpers
  * -------------------- */
 .materialize-red {
@@ -4443,7 +4451,7 @@ small {
 
 nav {
   color: #fff;
-  background-color: #1976D2;
+  background-color: #0D47A1;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -4815,7 +4823,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #1976D2;
+  border-left: 5px solid #0D47A1;
 }
 
 i {
@@ -4854,94 +4862,6 @@ video.responsive-video {
   height: auto;
 }
 
-.pagination li {
-  display: inline-block;
-  border-radius: 2px;
-  text-align: center;
-  vertical-align: top;
-  height: 30px;
-}
-
-.pagination li a {
-  color: #444;
-  display: inline-block;
-  font-size: 1.2rem;
-  padding: 0 10px;
-  line-height: 30px;
-}
-
-.pagination li.active a {
-  color: #fff;
-}
-
-.pagination li.active {
-  background-color: #1976D2;
-}
-
-.pagination li.disabled a {
-  cursor: default;
-  color: #999;
-}
-
-.pagination li i {
-  font-size: 2rem;
-}
-
-.pagination li.pages ul li {
-  display: inline-block;
-  float: none;
-}
-
-@media only screen and (max-width: 992px) {
-  .pagination {
-    width: 100%;
-  }
-  .pagination li.next,
-  .pagination li.prev {
-    width: 10%;
-  }
-  .pagination li.pages {
-    width: 80%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-}
-
-.breadcrumb {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.breadcrumb [class*="mdi-"],
-.breadcrumb [class^="mdi-"],
-.breadcrumb i,
-.breadcrumb i.material-icons {
-  display: inline-block;
-  float: left;
-  font-size: 24px;
-}
-
-.breadcrumb:before {
-  content: '\E5CC';
-  color: rgba(255, 255, 255, 0.7);
-  vertical-align: top;
-  display: inline-block;
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 25px;
-  margin: 0 10px 0 8px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.breadcrumb:first-child:before {
-  display: none;
-}
-
-.breadcrumb:last-child {
-  color: #fff;
-}
-
 .parallax-container {
   position: relative;
   overflow: hidden;
@@ -4969,15 +4889,6 @@ video.responsive-video {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.pin-bottom,
-.pin-top {
-  position: relative;
-}
-
-.pinned {
-  position: fixed !important;
 }
 
 /*********************
@@ -5067,7 +4978,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #1976D2;
+  background-color: #0D47A1;
 }
 
 footer.page-footer .footer-copyright {
@@ -5306,65 +5217,6 @@ th {
   border: none;
 }
 
-span.badge {
-  min-width: 3rem;
-  padding: 0 6px;
-  margin-left: 14px;
-  text-align: center;
-  font-size: 1rem;
-  line-height: inherit;
-  color: #757575;
-  float: right;
-  box-sizing: border-box;
-}
-
-span.badge.new {
-  font-weight: 300;
-  font-size: 0.8rem;
-  color: #fff;
-  background-color: #d81b60;
-  border-radius: 2px;
-}
-
-span.badge.new:after {
-  content: " new";
-}
-
-span.badge[data-badge-caption]::after {
-  content: " " attr(data-badge-caption);
-}
-
-nav ul a span.badge {
-  display: inline-block;
-  float: none;
-  margin-left: 4px;
-  line-height: 22px;
-  height: 22px;
-}
-
-.collapsible span.badge.new,
-.side-nav span.badge.new {
-  position: relative;
-  background-color: transparent;
-}
-
-.collapsible span.badge.new::before,
-.side-nav span.badge.new::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  background-color: #d81b60;
-  border-radius: 2px;
-  z-index: -1;
-}
-
-.collapsible span.badge.new {
-  z-index: 1;
-}
-
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -5389,7 +5241,7 @@ nav ul a span.badge {
   width: 100%;
   background-color: #f8c7d9;
   border-radius: 2px;
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 1rem 0;
   overflow: hidden;
 }
 
@@ -5399,8 +5251,8 @@ nav ul a span.badge {
   left: 0;
   bottom: 0;
   background-color: #d81b60;
-  -webkit-transition: width 0.3s linear;
-  transition: width 0.3s linear;
+  -webkit-transition: width .3s linear;
+  transition: width .3s linear;
 }
 
 .progress .indeterminate {
@@ -5550,4 +5402,6 @@ nav ul a span.badge {
   padding: 0 !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+*[class*="darken-"] {
+  color: #fff !important;
+}
