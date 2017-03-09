@@ -1,11 +1,11 @@
+'use strict';
 /*
 * Default Requires
 * =================================
 */
-'use strict';
-window.jQuery = window.$ = require('jQuery');
+// window.jQuery = window.$ = require('jQuery');
 require('../../node_modules/simpleskeletoncss/dist/js/simpleskeleton.min.js')
-
+import all from '../sass/style.scss';
 /*
 * You Requires
 * =================================

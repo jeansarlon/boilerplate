@@ -1,6 +1,5 @@
 'use strict';
-let $ = require('jQuery')
-,Example;
+let Example;
 
 Example = function(options) {
    this.$element = $(options.element);
