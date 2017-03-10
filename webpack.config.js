@@ -1,8 +1,8 @@
-const webpack = require("webpack"),
-   node_dir = __dirname + '/node_modules',
-   autoprefixer = require('autoprefixer'),
+const webpack        = require("webpack"),
+   node_dir          = __dirname + '/node_modules',
+   autoprefixer      = require('autoprefixer'),
    ExtractTextPlugin = require('extract-text-webpack-plugin'),
-   path = require('path');
+   path              = require('path');
 
 module.exports = {
    entry: [
@@ -50,6 +50,7 @@ module.exports = {
    },
    plugins: [
       new webpack.ProvidePlugin({$: "jquery", jquery: "jQuery", "windows.jQuery": "jquery"}),
-      new webpack.WatchIgnorePlugin([path.join(__dirname, 'node_modules')])
+      new webpack.WatchIgnorePlugin([path.join(__dirname, 'node_modules')]),
+      // new ExtractTextPlugin({filename: '[name].bundle.css', allChunks: true})
    ]
 };
