@@ -4,21 +4,14 @@ const webpack = require("webpack"),
    ExtractTextPlugin = require('extract-text-webpack-plugin'),
    path = require('path');
 
-const sassLoaders = [
-   'css-loader',
-   'postcss-loader',
-   'sass-loader?indentedSyntax=sass&includePaths[]=' + path.resolve(__dirname, './src')
-]
-
 module.exports = {
-   entry:
-   [
+   entry: [
       'jquery', `${__dirname}/source/js/main.js`
    ],
    devtool: 'source-map',
-   devServer:{
-        contentBase: __dirname + '/public'
-    },
+   devServer: {
+      contentBase: __dirname + '/public'
+   },
    output: {
       path: `${__dirname}/public`,
       filename: 'bundle.js'
@@ -27,7 +20,6 @@ module.exports = {
    module: {
       loaders: [
          {
-            // test: /\.js$/,
             test: [
                /\.js$/, /\.es6$/
             ],
@@ -44,10 +36,10 @@ module.exports = {
             loader: "json-loader"
          }, {
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            loader: "url-loader?limit=10000&mimetype=application/font-woff"
+            loader: "url-loader?name=./fonts/[name].[ext]&limit=10000&mimetype=application/font-woff"
          }, {
             test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            loader: "file-loader"
+            loader: "file-loader?name=./fonts/[name].[ext]"
          }
       ]
    },
@@ -58,8 +50,6 @@ module.exports = {
    },
    plugins: [
       new webpack.ProvidePlugin({$: "jquery", jquery: "jQuery", "windows.jQuery": "jquery"}),
-      new webpack.WatchIgnorePlugin([
-        path.join(__dirname, 'node_modules')
-      ]),
-]
+      new webpack.WatchIgnorePlugin([path.join(__dirname, 'node_modules')])
+   ]
 };
